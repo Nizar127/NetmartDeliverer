@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "174294966788",
+    "firebase_url": "https://netmart-deliverer.firebaseio.com",
+    "project_id": "netmart-deliverer",
+    "storage_bucket": "netmart-deliverer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174294966788:android:2eda7c7ab7d61dcf158b51",
+        "android_client_info": {
+          "package_name": "com.test.netmartdeliverer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174294966788-ivsqsbeileksip3o6ghojr5balqc3pvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDbb8P35i-JuyNb6wIVhWU7tZ1DT0dkX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174294966788-ivsqsbeileksip3o6ghojr5balqc3pvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
