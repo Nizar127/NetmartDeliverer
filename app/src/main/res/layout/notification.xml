@@ -44,58 +44,57 @@
                         android:orientation="vertical">
 
 
-
                         <TextView
                             android:id="@+id/notifyTitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/notifyTitle"
                             android:textSize="20sp"
-                            android:fontFamily="@font/MontserratBold"
-                            android:textStyle="bold"
-                            android:text="@string/notifyTitle"/>
+                            android:textStyle="bold" />
 
 
                         <TextView
                             android:id="@+id/notifyDeliveryTime"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="13sp"
-                            android:fontFamily="@font/MontserratMedium"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/monda"
                             android:paddingTop="5dp"
-                            android:text="@string/notifytimeSend"/>
+                            android:text="8.00 PM"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/notifyDeliveryDate"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="13sp"
-                            android:fontFamily="@font/MontserratMedium"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/montserrat"
                             android:paddingTop="5dp"
-                            android:text="@string/notifyDate"/>
+                            android:text="@string/notifyDate"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/notifyDeliveryItem"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="13sp"
-                            android:fontFamily="@font/MontserratMedium"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/montserrat"
                             android:paddingTop="5dp"
-                            android:text="@string/itemNumber"/>
+                            android:text="@string/itemNumber"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/notifyItemDetails"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="13sp"
-                            android:fontFamily="@font/MontserratMedium"
-                            android:textStyle="bold"
-                            android:textColor="#0000FF"
+                            android:fontFamily="@font/montserrat"
                             android:paddingTop="5dp"
                             android:paddingBottom="20dp"
-                            android:text="@string/viewDetails"/>
+                            android:text="@string/viewDetails"
+                            android:textColor="#0000FF"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -110,14 +109,14 @@
                             android:id="@+id/notifyTotalPrice"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="25sp"
-                            android:fontFamily="@font/MontserratMedium"
-                            android:textStyle="bold"
-                            android:textColor="#0000FF"
+                            android:fontFamily="@font/montserrat"
+                            android:paddingLeft="20dp"
                             android:paddingTop="25dp"
                             android:paddingBottom="10dp"
-                            android:paddingLeft="20dp"
-                            android:text="RM 30.00"/>
+                            android:text="RM 30.00"
+                            android:textColor="#0000FF"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>

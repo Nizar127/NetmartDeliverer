@@ -30,13 +30,26 @@
 
 
                 <TextView
-                    android:id="@+id/timetosend"
+                    android:id="@+id/sendingTime"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/monda"
+                    android:gravity="start"
+                    android:text="10.00 PM"
+                    android:textColor="@color/Black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/sendingDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:fontFamily="@font/MontserratMedium"
-                    android:gravity="left"
-                    android:text="@string/notifytimeSend"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="end"
+                    android:text="10/2/2020"
                     android:textColor="@color/Black"
                     android:textSize="20sp" />
 
@@ -76,7 +89,7 @@
                                 android:id="@+id/notifyTitle"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/MontserratBold"
+                                android:fontFamily="@font/montserrat"
                                 android:text="@string/notifyTitle"
                                 android:textColor="@color/Black"
                                 android:textSize="30sp"
@@ -97,10 +110,10 @@
                                     android:src="@drawable/ic_location_on_black_24dp" />
 
                                 <TextView
-                                    android:id="@+id/notifyDeliveryTime"
+                                    android:id="@+id/notifyDeliveryLocation"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/MontserratMedium"
+                                    android:fontFamily="@font/montserrat"
                                     android:paddingTop="5dp"
                                     android:text="Kuala Ibai"
                                     android:textSize="20sp"
@@ -124,9 +137,9 @@
                                 android:id="@+id/notifyTotalPrice"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/MontserratMedium"
+                                android:fontFamily="@font/montserrat"
                                 android:paddingLeft="2dp"
-                                android:paddingTop="5dp"
+                                android:paddingTop="15dp"
                                 android:paddingBottom="10dp"
                                 android:text="RM 30.00"
                                 android:textColor="#0000FF"
@@ -140,7 +153,7 @@
                     </LinearLayout>
 
 
-                </>
+                </LinearLayout>
 
 
             </androidx.cardview.widget.CardView>
@@ -194,72 +207,70 @@
                             >
 
 
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:text="SubTotal"
+                                android:textColor="@color/DarkGray"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/subTotal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:text="RM 50"
+                                android:textColor="@color/Black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="65dp"
+                            android:orientation="vertical"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:background="@drawable/verticalline"
+                            >
+
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="SubTotal"
                                 android:layout_gravity="center"
                                 android:layout_margin="2dp"
+                                android:fontFamily="@font/montserrat"
                                 android:gravity="center"
-                                android:fontFamily="@font/MontserratMedium"
-                                android:textSize="18sp"
+                                android:text="Tax"
                                 android:textColor="@color/DarkGray"
-                                android:textStyle="bold"/>
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
 
                             <TextView
                                 android:id="@+id/tax"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="RM 50"
                                 android:layout_gravity="center"
                                 android:layout_margin="2dp"
+                                android:fontFamily="@font/montserrat"
                                 android:gravity="center"
-                                android:fontFamily="@font/MontserratMedium"
-                                android:textSize="18sp"
-                                android:textColor="@color/DarkGray"
-                                android:textStyle="bold"/>
-
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="130dp"
-                            android:layout_height="65dp"
-                            android:orientation="vertical"
-                            android:gravity="left"
-                            android:layout_gravity="left"
-                            android:background="@drawable/verticalline"
-                            >
-
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Tax"
-                                android:layout_gravity="center"
-                                android:layout_margin="2dp"
-                                android:gravity="center"
-                                android:fontFamily="@font/MontserratMedium"
-                                android:textSize="18sp"
-                                android:textColor="@color/DarkGray"
-                                android:textStyle="bold"/>
-
-
-
-                            <TextView
-                                android:id="@+id/subtotal"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
                                 android:text="RM 5"
-                                android:layout_gravity="center"
-                                android:layout_margin="2dp"
-                                android:gravity="center"
-                                android:fontFamily="@font/MontserratMedium"
+                                android:textColor="@color/Black"
                                 android:textSize="18sp"
-                                android:textColor="@color/DarkGray"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
 
 
 
@@ -278,29 +289,28 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Total"
                                 android:layout_gravity="center"
                                 android:layout_margin="2dp"
+                                android:fontFamily="@font/montserrat"
                                 android:gravity="center"
-                                android:fontFamily="@font/MontserratMedium"
-                                android:textSize="18sp"
+                                android:text="Total"
                                 android:textColor="@color/DarkGray"
-                                android:textStyle="bold"/>
-
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
 
 
                             <TextView
                                 android:id="@+id/total"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="RM 55"
                                 android:layout_gravity="center"
                                 android:layout_margin="2dp"
+                                android:fontFamily="@font/montserrat"
                                 android:gravity="center"
-                                android:fontFamily="@font/MontserratMedium"
+                                android:text="RM 55"
+                                android:textColor="@color/Black"
                                 android:textSize="18sp"
-                                android:textColor="@color/DarkGray"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
 
 
 

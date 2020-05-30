@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -17,11 +18,15 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
     private MapView mapView;
     private GoogleMap gmap;
 
+
     private static final String MAP_VIEW_BUNDLE_KEY ="https://fvs.io/redirector?token=SGx6Umg3dWhmMlRKa2NIRHpCTk82SzM2UTdGVll5aUhreDBXanN4cDJnS0JIUFRvVnVMbnZzNXo5STZQc2RYWDAvNXR3Vk93QXNYSG82WmpNc0hjSzBIM2ZNWkFRQzdMMS82RWwvUmFCWUtoU3ZCcUNpUThwRkZlZlJmWFd5eVlHT2g2ZnVqcDhHZlZFYy94eTBrVmFuWi9UNG5uOXc9PTpSbnRyc1ZUNk1TT2dWYkFwbWk2djJRPT0";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
+
+        TextView deliveryTime = findViewById(R.id.DeliveryTime);
+        TextView locationToDeliver = findViewById(R.id.locationToDeliver);
 
         Bundle mapViewBundle = null;
         if(savedInstanceState != null){

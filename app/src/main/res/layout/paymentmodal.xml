@@ -38,7 +38,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/MontserratMedium"
+                    android:fontFamily="@font/montserrat"
                     android:paddingTop="5dp"
                     android:text="Congrats!!!"
                     android:textColor="@color/Black"
@@ -49,7 +49,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/MontserratMedium"
+                    android:fontFamily="@font/montserrat"
                     android:paddingTop="15dp"
                     android:text="You Successfully Made"
                     android:textColor="@color/Black"
@@ -62,7 +62,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/MontserratMedium"
+                    android:fontFamily="@font/monda"
                     android:gravity="center"
                     android:paddingLeft="12dp"
                     android:paddingTop="25dp"
@@ -75,7 +75,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/MontserratMedium"
+                    android:fontFamily="@font/montserrat"
                     android:paddingTop="15dp"
                     android:text="Today"
                     android:textColor="@color/Black"
@@ -86,7 +86,7 @@
                     android:id="@+id/paymentDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/MontserratMedium"
+                    android:fontFamily="@font/montserrat"
                     android:paddingTop="15dp"
                     android:text="@string/notifyDate"
                     android:textColor="@color/Black"
@@ -96,7 +96,7 @@
                 <TextView
                     android:layout_width="290dp"
                     android:layout_height="115dp"
-                    android:fontFamily="@font/MontserratMedium"
+                    android:fontFamily="@font/monda"
                     android:paddingTop="5dp"
                     android:text="Please Check Your Bank Account Tonight At 12.00 AM"
                     android:textSize="23sp"

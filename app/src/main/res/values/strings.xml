@@ -3,7 +3,7 @@
     <string name="acceptBtn">Accept</string>
     <string name="rejectBtn">Reject</string>
     <string name="notifyTitle">Name</string>
-    <string name="notifytimeSend">8.00PM</string>
+
     <string name="notifyDay">Today</string>
     <string name="notifyDate">10/2/2020</string>
     <string name="itemNumber">15 Items</string>
@@ -11,4 +11,7 @@
     <string name="viewDetails">View Details</string>
     <string name="viewPayment">View Total Payment</string>
     <string name="map_key" translatable="false">AIzaSyDUvsxYUDVxZ_Aego7BaFJfWM-p1VKWktw</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

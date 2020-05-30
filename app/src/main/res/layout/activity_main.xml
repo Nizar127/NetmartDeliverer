@@ -20,26 +20,56 @@
           android:layout_height="80dp"
           android:orientation="vertical">
 
-          <include layout="@layout/app_bar" />
-
-          <com.google.android.material.tabs.TabLayout
+          <com.google.android.material.appbar.AppBarLayout
               android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:minHeight="?actionBarSize"
-              app:tabGravity="fill"
-              app:tabIndicatorHeight="4dp"
-              app:tabBackground="@color/GhostWhite"
-              app:tabMode="fixed">
+              android:layout_height="wrap_content">
+
+              <androidx.appcompat.widget.Toolbar
+                  android:id="@+id/toolbar"
+                  android:layout_width="match_parent"
+                  android:layout_height="?attr/actionBarSize"
+                  android:background="@color/GhostWhite" />
+
+              <com.google.android.material.tabs.TabLayout
+                  android:id="@+id/tabLayout"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/GhostWhite"
+                  app:tabGravity="fill"
+                  app:tabIndicatorHeight="4dp"
+                  app:tabMode="fixed">
+
+                  <com.google.android.material.tabs.TabItem
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Past"/>
+                  <com.google.android.material.tabs.TabItem
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Today"/>
+                  <com.google.android.material.tabs.TabItem
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Tomorrow"/>
+                  <com.google.android.material.tabs.TabItem
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Job Day"/>
 
 
-          </com.google.android.material.tabs.TabLayout>
+              </com.google.android.material.tabs.TabLayout>
+
+
+          </com.google.android.material.appbar.AppBarLayout>
+
+<!--          <include layout="@layout/app_bar" />-->
+
 
           <androidx.viewpager.widget.ViewPager
-              android:id="@+id/tabViewPager"
+              android:id="@+id/viewpager"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
-
-          </androidx.viewpager.widget.ViewPager>
+              android:layout_height="match_parent"
+              app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
 
 
       </LinearLayout>
@@ -192,16 +222,15 @@
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="10dp"
                             android:background="@color/Green"
-                            android:fontFamily="@font/MontserratMedium"
+                            android:fontFamily="@font/montserrat"
                             android:text="Accept"
                             android:textColor="@color/White"
-                            android:textSize="25sp"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginEnd="5dp"
-                            />
+                            android:textSize="25sp" />
 
 
                         <Button
@@ -209,15 +238,15 @@
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
-                            android:background="@color/Red"
-                            android:text="Reject"
-                            android:fontFamily="@font/MontserratMedium"
-                            android:textColor="@color/White"
-                            android:textSize="25sp"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginBottom="8dp"
                             android:layout_marginStart="5dp"
-                            android:layout_marginEnd="5dp"/>
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@color/Red"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Reject"
+                            android:textColor="@color/White"
+                            android:textSize="25sp" />
 
                     </LinearLayout>
 
@@ -237,14 +266,15 @@
 
         </FrameLayout>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/cart_list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/newJob"
-            >
+<androidx.recyclerview.widget.RecyclerView
 
-        </android.support.v7.widget.RecyclerView>
+    android:id="@+id/order_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/newJob"
+    >
+
+</androidx.recyclerview.widget.RecyclerView>
 
     </RelativeLayout>
 

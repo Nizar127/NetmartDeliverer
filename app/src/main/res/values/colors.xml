@@ -144,4 +144,14 @@
     <color name="DarkBlue">#00008B</color>
     <color name="Navy">#000080</color>
     <color name="Black">#000000</color>
+    <color name="splashname">#1a1b29</color>
+    <color name="colorWhiteBackground">#FFFFFF</color>
+    <color name="colorBlackBackground">#000000</color>
+    <color name="colorGreyBackground">#D4CFCF</color>
+    <color name="colorBlueBackground">#2E0EFF</color>
+    <color name="colorDarkGreyBackground">#727272</color>
+    <color name="coloraddbuttonfab">#30FD10</color>
+    <color name="orderNumber">#3064F2</color>
+    <color name="finishedItem">#FB0B0B</color>
+    <color name="sellingfast">#E1FB0B</color>
 </resources>
